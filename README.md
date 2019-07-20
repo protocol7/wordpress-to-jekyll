@@ -12,7 +12,7 @@ docker build -t wp2j .
 Make sure you export an XML file from your Wordpress blog.
 
 ```
-docker run -v ${PWD}:/home -it wp2j:latest <your XML file>
+docker run -v ${PWD}:/home wp2j:latest <your XML file>
 ```
 
 This will convert all posts and pages to HTML and Markdown as well as download
